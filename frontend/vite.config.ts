@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     host: "0.0.0.0",
     port: 5173,
-    cors: true, // ✅ allow all CORS
+    cors: true,
     proxy: {
       "/api": {
         target: "http://backend:3001", // backend service name in docker-compose

@@ -27,7 +27,6 @@ function App() {
 
   const removeUser = async () => {
     try {
-      // just remove the last user for demo purposes
       const lastUser = users[users.length - 1];
       if (!lastUser) return;
       await fetch(`http://localhost:3001/api/users`, {
