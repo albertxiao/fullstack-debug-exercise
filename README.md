@@ -11,7 +11,10 @@ This repo has a few bugs and messy code. Your task (45–60 mins):
    - Fix the Counter re-render bug.
    - Make sure the user list renders properly.
 
-3. **Tests**
+3. **Docker**
+   - Make sure the containers run properly.
+
+4. **Tests**
    - Fix the failing tests in `cart.test.ts`.
    - Add at least 1 missing test for `db.test.js`.
 
