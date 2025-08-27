@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+  backend:
+    build:
+      context: ./backend
+    container_name: debug_backend
+    command: npm run dev
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+    working_dir: /app
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: debug_frontend
+    command: npm start
+    ports:
+      - "5173:5173" # default Vite dev server
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    working_dir: /app
+    environment:
+      - VITE_BACKEND_URL=http://localhost:3001
