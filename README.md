@@ -1,6 +1,5 @@
-# Fullstack Debugging Exercise by Albert Xiao
-
-This repo has a few bugs and messy code. Your task (45–60 mins):
+# Fullstack Debugging Exercise
+This repo has a few bugs and messy code. Your task (30–45 mins):
 
 1. **Backend**
    - Fix the bug in `/api/users` (hint: db.getUsers can break).
